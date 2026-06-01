@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="CyberClubApi.Tests/CyberClubApi.Tests.csproj" Id="7acf928c-506f-4d5b-8cca-a4b9d7e22029" />
   <Project Path="CyberClubApi/CyberClubApi.csproj" />
 </Solution>
