@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberClub Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎮 CyberClub Admin</h1>
+            <p>Панель керування комп'ютерами</p>
+        </header>
+
+        <div class="main-content">
+            <section class="card form-section">
+                <h2>Додати новий ПК</h2>
+                <form id="addComputerForm">
+                    <div class="input-group">
+                        <label for="name">Назва ПК:</label>
+                        <input type="text" id="name" placeholder="Напр., VIP-01" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="status">Статус:</label>
+                        <select id="status">
+                            <option value="Free">Вільний (Free)</option>
+                            <option value="InGame">В грі (InGame)</option>
+                            <option value="Offline">Вимкнений (Offline)</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="zoneId">Номер зони:</label>
+                        <input type="number" id="zoneId" value="1" required>
+                    </div>
+                    <button type="submit" class="btn-submit">Додати ПК</button>
+                </form>
+            </section>
+
+            <section class="card table-section">
+                <h2>Список комп'ютерів</h2>
+                <table id="computersTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Назва</th>
+                            <th>Статус</th>
+                            <th>Зона</th>
+                            <th>Дії</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
